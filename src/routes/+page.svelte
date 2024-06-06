@@ -24,6 +24,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Blog</title>
+</svelte:head>
+
 <main>
 	<h1>Blog :3</h1>
 	<br />
