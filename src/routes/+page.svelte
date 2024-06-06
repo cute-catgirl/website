@@ -2,9 +2,8 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	export let data;
-	console.log(data);
-	let lastUpdated = new Date(data.posts[0].meta.date);
-	let lastUpdatedString = `${lastUpdated.getDay()}/${lastUpdated.getMonth()}/${lastUpdated.getFullYear()}`;
+	const date = new Date(data.posts[0].meta.date);
+	let dateString = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
 	let messages = [
 		'This is a blog. Sometimes I write stuff.',
 		'This is a blog. I write stuff here.',
@@ -14,7 +13,7 @@
 		'This is a blog. Thank you for reading!',
 		'This is a blog... or is it?',
 		'This is a blog. It is written in Svelte and SvelteKit.',
-		`This is a blog. It was last updated on ${lastUpdatedString}.`,
+		`This is a blog. It was last updated on ${dateString}.`,
 		'This is, unsurprisingly, a blog.'
 	];
 
