@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #191724;
+    color: #e0def4;
+}
+
+h1 {
+    font-family: 'Lato';
+}
+
+h2 {
+    font-family: 'Lato';
+    color: #908caa;
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    padding-bottom: 1em;
+}
+
+a {
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    color: #eb6f92;
+}
+
+a:hover {
+    color: #ebbcba;
+}
