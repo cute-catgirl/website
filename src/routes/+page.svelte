@@ -32,7 +32,6 @@
 	<h1>Blog :3</h1>
 	<br />
 	<p>{message}</p>
-	<br />
 	<ul>
 		{#each data.posts as post}
 			<li transition:fade>
@@ -53,5 +52,6 @@
 
 	li {
 		list-style: none;
+		padding-bottom: 0.2em;
 	}
 </style>
