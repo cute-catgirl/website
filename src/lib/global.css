@@ -31,6 +31,12 @@ a {
     color: #eb6f92;
 }
 
+a:focus {
+    outline: #c4a7e7 solid 2px;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
 a:hover {
     color: #ebbcba;
 }
