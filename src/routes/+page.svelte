@@ -25,11 +25,11 @@
 </script>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Mae Moon ~ Blog</title>
 </svelte:head>
 
 <main>
-	<h1>Blog :3</h1>
+	<h1>Mae Moon</h1>
 	<br />
 	<p>{message}</p>
 	<ul>
