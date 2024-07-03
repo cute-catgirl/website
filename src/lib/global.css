@@ -4,39 +4,39 @@
 }
 
 body {
-    background-color: #191724;
-    color: #e0def4;
+    background-color: #ECEFF4;
+    color: #2E3440;
     word-wrap: break-word;
 }
 
 h1 {
-    font-family: 'Lato';
+    font-family: 'Inter';
 }
 
 h2 {
-    font-family: 'Lato';
-    color: #908caa;
+    font-family: 'Inter';
+    color: #434C5E;
     font-size: 1.2rem;
 }
 
 p {
-    font-family: 'Lato';
+    font-family: 'Inter';
     font-size: 1.2rem;
     padding-bottom: 1em;
 }
 
 a {
-    font-family: 'Lato';
+    font-family: 'Inter';
     font-size: 1.2rem;
-    color: #eb6f92;
+    color: #3B4252;
 }
 
 a:focus {
-    outline: #c4a7e7 solid 2px;
+    outline: #4C566A solid 2px;
     border-radius: 3px;
-    background-color: #c4a7e740;
+    background-color: #E5E9F0;
 }
 
 a:hover {
-    color: #ebbcba;
+    color: #4C566A;
 }
