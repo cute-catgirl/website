@@ -1,7 +1,6 @@
 <script>
 	export let data;
-	const date = new Date(data.date);
-	let dateString = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
+	let dateString = data.date.replaceAll('-', '/');
 </script>
 
 <svelte:head>
@@ -23,5 +22,9 @@
 		margin: 0 auto;
 		max-width: 750px;
 		padding: 2em;
+	}
+
+	article {
+		padding-bottom: 1em;
 	}
 </style>

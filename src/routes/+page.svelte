@@ -25,13 +25,21 @@
 </script>
 
 <svelte:head>
-	<title>Mae Moon ~ Blog</title>
+	<title>Mae Moon</title>
 </svelte:head>
 
 <main>
 	<h1>Mae Moon</h1>
 	<br />
-	<p>{message}</p>
+	<p>Hi! I'm Mae! I'm a highschool student living in Canada. I'm transfem and use she/her pronouns! I enjoy coding, playing video games, and music.</p>
+	<h2 class="section">Projects</h2>
+	<ul>
+		<li>Coming soon-ish</li>
+	</ul>
+	<h2 class="section">Contact</h2>
+	<p>Discord ~ cute_catgirl</p>
+	<p>Email ~ maemoon@proton.me</p>
+	<h2 class="section">Blog</h2>
 	<ul>
 		{#each data.posts as post}
 			<li transition:fade>
