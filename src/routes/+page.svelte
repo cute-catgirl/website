@@ -33,9 +33,7 @@
 	<br />
 	<p>Hi! I'm Mae! I'm a highschool student living in Canada. I'm transfem and use she/her pronouns! I enjoy coding, playing video games, and music.</p>
 	<h2 class="section">Projects</h2>
-	<ul>
-		<li>Coming soon-ish</li>
-	</ul>
+	<p>Coming soon-ish</p>
 	<h2 class="section">Contact</h2>
 	<p>Discord ~ cute_catgirl</p>
 	<p>Email ~ maemoon@proton.me</p>
