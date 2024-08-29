@@ -7,32 +7,26 @@ body {
     background-color: #ECEFF4;
     color: #2E3440;
     word-wrap: break-word;
-}
-
-h1 {
     font-family: 'Inter';
 }
 
 h2 {
-    font-family: 'Inter';
     color: #434C5E;
     font-size: 1.2rem;
+    padding: 1rem 0;
 }
 
 p {
-    font-family: 'Inter';
     font-size: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding: 0.5rem 0;
 }
 
 li {
-    font-family: 'Inter';
     font-size: 1.2rem;
     font-style: italic;
 }
 
 a {
-    font-family: 'Inter';
     font-size: 1.2rem;
     color: #3B4252;
     font-style: normal;
