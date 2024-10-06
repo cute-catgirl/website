@@ -2,66 +2,66 @@
 title: "I just wanna make stuff"
 date: "2024-10-05"
 ---
-I just wanna make stuff
-make something cool
-interesting
-thoughtful
+I just wanna make stuff<br />
+make something cool<br />
+interesting<br />
+thoughtful<br />
 fun
 
-and I have so many ideas
-of things I wanna make
-and I start on them
-and everything is perfect
-I'm having fun
-doing something meaningful
+and I have so many ideas<br />
+of things I wanna make<br />
+and I start on them<br />
+and everything is perfect<br />
+I'm having fun<br />
+doing something meaningful<br />
 feeling productive
 
-and then
+and then<br />
 
-I have another idea
-and this idea
-well I wanna make it more
-so I start on it
-and everything is perfect
-I'm having fun
-doing something meaningful
+I have another idea<br />
+and this idea<br />
+well I wanna make it more<br />
+so I start on it<br />
+and everything is perfect<br />
+I'm having fun<br />
+doing something meaningful<br />
 feeling productive
 
-and then
+and then<br />
 
-I have another idea
-and this idea
-well I wanna make it more
-so I start on it
-and everything is pretty good
-I'm having fun
-doing something meaningful
-but the two unfinished things weigh on me
-I begin to lose motivation
-I'm never gonna finish this project either
+I have another idea<br />
+and this idea<br />
+well I wanna make it more<br />
+so I start on it<br />
+and everything is pretty good<br />
+I'm having fun<br />
+doing something meaningful<br />
+but the two unfinished things weigh on me<br />
+I begin to lose motivation<br />
+I'm never gonna finish this project either<br />
 so why should I even try?
 
-I'm stuck in a loop
-a cycle
+I'm stuck in a loop<br />
+a cycle<br />
 and I don't know how to break out
 
-My ADHD prevents me from staying interested in a project for longer than a week
-But I have big dreams! 
-I wanna make big stuff!
-I WANT TO MAKE A CHANGE IN THE WORLD
-I WANT TO HAVE HAD AN IMPACT
-I WANT TO LOOK BACK AND HAVE SOMETHING I'M GENUINELY PROUD OF
-LOOK AT ALL THESE PEOPLE
-MAKING STUFF THAT CHANGES THE WORLD
-THAT HAS AN IMPACT ON ME
+My ADHD prevents me from staying interested in a project for longer than a week<br />
+But I have big dreams!<br />
+I wanna make big stuff!<br />
+I WANT TO MAKE A CHANGE IN THE WORLD<br />
+I WANT TO HAVE HAD AN IMPACT<br />
+I WANT TO LOOK BACK AND HAVE SOMETHING I'M GENUINELY PROUD OF<br />
+LOOK AT ALL THESE PEOPLE<br />
+MAKING STUFF THAT CHANGES THE WORLD<br />
+THAT HAS AN IMPACT ON ME<br />
 THAT THEY ARE PROUD OF
 
-and then there's me.
-a website with an empty projects section.
-one small experiment.
-tens of incomplete github repos.
+and then there's me.<br />
+a website with an empty projects section.<br />
+one small experiment.<br />
+tens of incomplete github repos.<br />
 way more projects that i haven't bothered putting online.
 
-how do i stop this?
-how do i make stuff i'm proud of?
+how do i stop this?<br />
+how do i make stuff i'm proud of?<br />
 how do i break out of the loop?
