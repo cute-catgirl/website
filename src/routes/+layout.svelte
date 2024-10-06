@@ -1,8 +1,12 @@
 <script>
 	import '$lib/global.css';
-	import { fly, blur } from 'svelte/transition';
-	import { inject } from '@vercel/analytics';
+	import { blur } from 'svelte/transition';
 	export let data;
+
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+ 
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 {#key data.currentRoute}
