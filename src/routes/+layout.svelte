@@ -1,6 +1,7 @@
 <script>
 	import '$lib/global.css';
 	import { fly, blur } from 'svelte/transition';
+	import { inject } from '@vercel/analytics';
 	export let data;
 </script>
 
