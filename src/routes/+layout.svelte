@@ -11,6 +11,10 @@
 	injectSpeedInsights();
 </script>
 
+<svelte:head>
+	<meta name="description" content="Mae Moon's personal website and blog">
+</svelte:head>
+
 {#key data.currentRoute}
 	<main in:blur={{ duration: 200, delay: 200 }} out:blur={{ duration: 200 }}>
 		<slot />
