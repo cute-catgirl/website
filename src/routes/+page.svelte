@@ -59,7 +59,6 @@
 	main {
 		margin: 0 auto;
 		max-width: 750px;
-		padding: 2em;
 	}
 
 	li {

@@ -20,3 +20,9 @@
 		<slot />
 	</main>
 {/key}
+
+<style>
+	main {
+		padding: 2em;
+	}
+</style>
