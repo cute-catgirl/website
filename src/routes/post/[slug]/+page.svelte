@@ -1,5 +1,5 @@
 <script>
-	export let data;
+	let { data } = $props();
 	let dateString = data.date.replaceAll('-', '/');
 </script>
 
@@ -12,7 +12,7 @@
 		<h1>{data.title}</h1>
 		<h2>{dateString}</h2>
 		<br />
-		<svelte:component this={data.content} />
+		<data.content />
 	</article>
 	<a href="..">Back</a>
 </main>

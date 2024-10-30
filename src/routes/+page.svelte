@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	export let data;
+	let { data } = $props();
 	const date = new Date(data.posts[0].meta.date);
 	let dateString = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
 	let messages = [
