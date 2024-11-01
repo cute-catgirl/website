@@ -33,6 +33,10 @@ a {
     font-size: 1.2em;
 }
 
+article a {
+    font-size: 1em;
+}
+
 a:focus {
     outline: var(--color-fg-4) solid 2px;
     border-radius: 3px;
