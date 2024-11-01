@@ -1,4 +1,5 @@
 <script>
+	import Breadcrumb from '../lib/breadcrumb.svelte';
 	import '$lib/global.css';
 	import { blur } from 'svelte/transition';
 
@@ -15,17 +16,17 @@
 	<meta name="description" content="Mae Moon's personal website and blog">
 </svelte:head>
 
-{#key data.currentRoute}
-	<div id="page">
-		<aside>
-			<a href="/">home</a>
-			<a href="/blog">blog</a>
-		</aside>
-		<main in:blur={{ duration: 200, delay: 200 }} out:blur={{ duration: 200 }}>
-			{@render children?.()}
-		</main>
-	</div>
-{/key}
+<div id="page">
+	<aside>
+		<a href="/" class:active={data.currentRoute == "/"}>home</a>
+		<a href="/blog" class:active={data.currentRoute == "/blog"}>blog</a>
+	</aside>
+	{#key data.currentRoute}
+	<main>
+		{@render children?.()}
+	</main>
+	{/key}
+</div>
 
 <style>
 	#page {
@@ -43,5 +44,9 @@
 	main {
 		padding: 2em;
 		flex-basis: 50%;
+	}
+
+	.active::before {
+		content: "* ";
 	}
 </style>
