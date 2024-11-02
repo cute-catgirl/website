@@ -17,11 +17,11 @@
 </svelte:head>
 
 <div id="page">
+	{#key data.currentRoute}
 	<aside>
 		<a href="/" class:active={data.currentRoute == "/"}>home</a>
 		<a href="/blog" class:active={data.currentRoute == "/blog"}>blog</a>
 	</aside>
-	{#key data.currentRoute}
 	<main>
 		{@render children?.()}
 	</main>

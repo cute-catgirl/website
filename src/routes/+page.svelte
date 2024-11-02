@@ -1,4 +1,5 @@
 <script>
+	import Supportbutton from '../lib/supportbutton.svelte';
 	import { fade } from 'svelte/transition';
 	let { data } = $props();
 </script>
@@ -32,3 +33,5 @@
 	{/each}
 	<a href="/blog"><strong>see more -></strong></a>
 </ul>
+<h2 class="section">Support Me</h2>
+<Supportbutton></Supportbutton>
