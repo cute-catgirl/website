@@ -1,6 +1,7 @@
 ---
 title: "Being trans is like pineapple on pizza"
 date: "2024-02-13"
+tags: ["trans"]
 ---
 If you didn't know, I'm transgender (MtF). Throughout the process of discovering this, I've heard a lot of advice from people in the trans community.
 

@@ -1,6 +1,7 @@
 ---
 title: "RSS"
 date: "2024-09-19"
+tags: ["meta"]
 ---
 This is just a small update: I have an RSS feed now!
 

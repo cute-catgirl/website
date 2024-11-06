@@ -1,6 +1,7 @@
 ---
 title: "ADHD"
 date: "2024-04-30"
+tags: ["neurodivergence"]
 ---
 I have ADHD. That's probably not too surprising - ADHD is very common, with 4 to 8% of people having it (as far as I can tell from a quick Google search.) Yet despite that, I feel like I am constantly misunderstood.
 

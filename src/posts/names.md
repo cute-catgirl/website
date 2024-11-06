@@ -1,6 +1,7 @@
 ---
 title: "Names"
 date: "2024-03-06"
+tags: ["trans"]
 ---
 Names are hard.
 I don't know what my name is, or what it's going to be.

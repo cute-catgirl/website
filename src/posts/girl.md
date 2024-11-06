@@ -1,6 +1,7 @@
 ---
 title: "The best thing about being a girl"
 date: "2024-09-02"
+tags: ["trans"]
 ---
 The best thing about being a girl, about being trans, about being *me* - is that I actually like who I am.
 

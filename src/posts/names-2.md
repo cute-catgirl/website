@@ -1,6 +1,7 @@
 ---
 title: "Names 2"
 date: "2024-06-19"
+tags: ["trans"]
 ---
 I have a name now.
 
