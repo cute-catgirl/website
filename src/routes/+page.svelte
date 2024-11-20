@@ -1,6 +1,7 @@
 <script>
 	import Supportbutton from '../lib/supportbutton.svelte';
 	import { fade } from 'svelte/transition';
+	import { theme } from './shared.svelte.js';
 	let { data } = $props();
 </script>
 
@@ -38,4 +39,4 @@
 	<a href="/blog"><strong>see more -></strong></a>
 </ul>
 <h2 class="section">Support Me</h2>
-<Supportbutton></Supportbutton>
+<Supportbutton darkMode={theme.dark}></Supportbutton>

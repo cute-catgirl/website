@@ -1,9 +1,16 @@
-:root {
+.theme-light {
     --color-bg: #eceff4;
     --color-fg-1: #2e3440;
     --color-fg-2: #3b4252;
     --color-fg-3: #434c5e;
     --color-fg-4: #4c566a;
+}
+
+.theme-dark {
+    --color-bg: #3b4252;
+    --color-fg-1: #eceff4;
+    --color-fg-2: #e5e9f0;
+    --color-fg-3: #d8dee9;
 }
 
 * {
@@ -50,4 +57,10 @@ a:hover {
 li {
     list-style: none;
     padding-bottom: 0.2em;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
 }
