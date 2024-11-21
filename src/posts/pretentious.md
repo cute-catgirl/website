@@ -1,6 +1,6 @@
 ---
 title: "pretentiousness"
-date: "2024-08-09"
+date: "2024-11-20"
 tags: ["trans"]
 ---
 I hate the word 'pretentious'. I hear it used a lot to criticize art, but in almost every case it is simply a form of gatekeeping; because you created something that challenges the status quo you *must* have a big ego. You *must* think you're better than people! How dare you be proud of what you made! This isn't even that good - a dead fish is what it is!
