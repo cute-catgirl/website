@@ -22,12 +22,8 @@
 
 <div id="page">
 	{#key data.currentRoute}
-		<aside>
-			<a href="/" class:active={data.currentRoute == '/'}>home</a>
-			<a href="/blog" class:active={data.currentRoute.includes('/blog')}>blog</a>
-			<a href="/archive" class:active={data.currentRoute.includes('/archive')}>archive</a>
-		</aside>
 		<main>
+			<Breadcrumb path={data.currentRoute}></Breadcrumb>
 			{@render children?.()}
 		</main>
 		<button
@@ -50,26 +46,27 @@
 <style>
 	#page {
 		display: flex;
+		justify-content: center;
 		flex-shrink: 1;
 	}
 
-	aside {
+	/*aside {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		padding: 2em;
 		flex-basis: 15%;
-	}
+	}*/
 
 	main {
 		padding: 2em;
 		flex-basis: 50%;
 	}
 
-	.active::before {
+	/*.active::before {
 		content: '* ';
-	}
+	}*/
 
 	#themebutton {
 		position: fixed;

@@ -17,6 +17,9 @@
 	<li>
 		<a href="https://github.com/cute-catgirl/Loft">Loft</a>
 	</li>
+	<li>
+		<a href="/archive"><strong>archive -></strong></a>
+	</li>
 </ul>
 <h2 class="section">Experiments</h2>
 <ul>
