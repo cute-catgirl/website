@@ -45,7 +45,11 @@ a {
 }
 
 article a {
-    font-size: 1rem;
+    font-size: 1em;
+}
+
+article > p {
+    padding-bottom: 1.2em;
 }
 
 a:focus {
