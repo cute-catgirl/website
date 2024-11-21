@@ -25,6 +25,7 @@
 		<aside>
 			<a href="/" class:active={data.currentRoute == '/'}>home</a>
 			<a href="/blog" class:active={data.currentRoute.includes('/blog')}>blog</a>
+			<a href="/archive" class:active={data.currentRoute.includes('/archive')}>archive</a>
 		</aside>
 		<main>
 			{@render children?.()}

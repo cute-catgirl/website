@@ -1,16 +1,20 @@
 .theme-light {
     --color-bg: #eceff4;
+    --color-bg-2: #e5e9f0;
     --color-fg-1: #2e3440;
     --color-fg-2: #3b4252;
     --color-fg-3: #434c5e;
     --color-fg-4: #4c566a;
+    --color-accent: #81a1c1;
 }
 
 .theme-dark {
     --color-bg: #3b4252;
+    --color-bg-2: #434c5e;
     --color-fg-1: #eceff4;
     --color-fg-2: #e5e9f0;
     --color-fg-3: #d8dee9;
+    --color-accent: #81a1c1;
 }
 
 * {
@@ -27,21 +31,21 @@ body {
 
 h2 {
     color: var(--color-fg-1);
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 a {
     color: var(--color-fg-2);
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 article a {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 a:focus {
@@ -56,11 +60,11 @@ a:hover {
 
 li {
     list-style: none;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.2rem;
 }
 
 .icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.125em;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.125rem;
 }
