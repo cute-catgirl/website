@@ -16,7 +16,7 @@
         <a href="https://cute-catgirl.github.io/clicker/">
 			<h2>Clicker</h2>
             <h3>2021</h3>
-			<p>Unfinished clicker game. I don't know why I ever thought the background color looked good.</p>
+			<p>Unfinished clicker game. I don't know why I ever thought the background color looked good. That said, might return to this someday.</p>
 		</a>
         <a href="https://cute-catgirl.github.io/catbox/">
 			<h2>Catbox v2</h2>
