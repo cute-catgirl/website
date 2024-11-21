@@ -18,16 +18,16 @@
 <br />
 <ul>
 	<li>
+		<a href="/projects"><strong>projects -></strong></a>
+	</li>
+	<li>
 		<a href="/experiments"><strong>experiments -></strong></a>
 	</li>
 	<li>
 		<a href="/archive"><strong>archive -></strong></a>
 	</li>
-	<li>
-		<a href="/blog"><strong>blog -></strong></a>
-	</li>
 </ul>
-<h2 class="section">Latest posts</h2>
+<h2 class="section">Blog</h2>
 <ul>
 	{#each data.posts.slice(0, 8) as post}
 		<li transition:fade>
@@ -36,6 +36,7 @@
 			</a>
 		</li>
 	{/each}
+	<a href="/blog"><strong>see more -></strong></a>
 </ul>
 <h2 class="section">Contact</h2>
 <p>Discord ~ cute_catgirl</p>
