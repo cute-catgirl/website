@@ -7,4 +7,7 @@
     <li>
         <a href="/experiments/favicon">favicon</a>
     </li>
+	<li>
+        <a href="/experiments/click">click</a>
+    </li>
 </ul>
