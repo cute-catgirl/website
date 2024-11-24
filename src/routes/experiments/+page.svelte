@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>Mae Moon</title>
-</svelte:head>
-
 <h1>Mae Moon ~ Experiments</h1>
 <br>
 <ul>

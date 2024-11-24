@@ -3,10 +3,6 @@
 	let dateString = data.date.replaceAll('-', '/');
 </script>
 
-<svelte:head>
-	<title>{data.title}</title>
-</svelte:head>
-
 <article>
 	<h1>{data.title}</h1>
 	<h2>{dateString}</h2>

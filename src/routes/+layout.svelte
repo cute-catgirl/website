@@ -17,6 +17,7 @@
 </script>
 
 <svelte:head>
+	<title>Mae Moon</title>
 	<meta name="description" content="Mae Moon's personal website and blog" />
 	{#if data.currentRoute != "/experiments/favicon"}
 	<link rel="icon" href="/favicon.svg" />

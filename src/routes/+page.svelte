@@ -5,10 +5,6 @@
 	let { data } = $props();
 </script>
 
-<svelte:head>
-	<title>Mae Moon</title>
-</svelte:head>
-
 <h1>Mae Moon</h1>
 <br />
 <p>
