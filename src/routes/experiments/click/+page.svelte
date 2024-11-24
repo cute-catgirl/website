@@ -55,7 +55,7 @@ function upgrade() {
     if (score >= ${upgradePrice}) {
         score -= ${upgradePrice};
         clickPower += 1;
-        upgradePrice *= 3;
+        upgradePrice *= 2;
     }
 }`;
 		}
