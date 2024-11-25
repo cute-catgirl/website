@@ -12,3 +12,9 @@
 {#each sortedInstances as [instance, count]}
     <h3>{instance} - {count}</h3>
 {/each}
+
+<style>
+    a {
+        font-size: 1.5rem;
+    }
+</style>
