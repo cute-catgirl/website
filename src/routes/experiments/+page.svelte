@@ -10,4 +10,7 @@
 	<li>
         <a href="/experiments/click">click</a>
     </li>
+	<li>
+        <a href="/experiments/logstats">logiverse stats</a>
+    </li>
 </ul>
