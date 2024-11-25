@@ -8,7 +8,7 @@
 
 <h1>Logiverse stats</h1>
 <br>
-<h2>The logiverse currently has {calculateTotal(data.counts)} users</h2>
+<h2>The <a href="https://logiverse.social">Logiverse</a> currently has {calculateTotal(data.counts)} users</h2>
 {#each sortedInstances as [instance, count]}
     <h3>{instance} - {count}</h3>
 {/each}
