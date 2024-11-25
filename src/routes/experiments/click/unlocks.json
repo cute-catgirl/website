@@ -1,0 +1,8 @@
+{
+    "click_upgrade": {
+        "requirement": 25
+    },
+    "autoclicker": {
+        "requirement": 300
+    }
+}

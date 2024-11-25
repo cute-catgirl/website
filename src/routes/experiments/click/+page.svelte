@@ -1,126 +1,60 @@
 <script>
-	let score = $state(0);
-	let clickPower = $state(1);
-	let upgradePrice = $state(50);
-	let featuresUnlocked = $state([]);
-	let autoclickPower = $state(0);
-	let autoUpgradePrice = $state(500);
+	import Codedisplay from "./lib/codedisplay.svelte";
 
-	let code = $derived.by(() => {
-		if (featuresUnlocked.includes(1)) {
-			return `// click v0.1
-// by Mae Moon
-// TODO: add saving
-
-function click() {
-    score += ${clickPower};
-    // TODO: add new stuff
-}
-
-function upgrade() {
-    if (score >= ${upgradePrice}) {
-        score -= ${upgradePrice};
-        clickPower += 1;
-        upgradePrice *= 2;
-    }
-}
-    
-function upgradeAuto() {
-    if (score >= ${autoUpgradePrice}) {
-        score -= ${autoUpgradePrice};
-        autoclickPower += 1;
-        autoUpgradePrice *= 3;
-    }
-}
-    
-function autoclick() {
-    score += ${autoclickPower};
-}
-
-setInterval(autoclick, 1000);`;
-		}
-		if (featuresUnlocked.includes(0)) {
-			return `// click v0.1
-// by Mae Moon
-// TODO: add saving
-
-function click() {
-    score += ${clickPower};
-    if (score >= 300) {
-        unlockNewFeature();
-    }
-}
-
-function upgrade() {
-    if (score >= ${upgradePrice}) {
-        score -= ${upgradePrice};
-        clickPower += 1;
-        upgradePrice *= 2;
-    }
-}`;
-		}
-		return `// click v0.1
-// by Mae Moon
-// TODO: add saving
-
-function click() {
-    score += 1;
-    if (score >= 25) {
-        unlockNewFeature();
-    }
-}`;
-	});
+	let game = $state({
+		score: 0,
+		clickPower: 1,
+		upgradePrice: 50,
+		featuresUnlocked: [],
+		autoclickPower: 0,
+		autoUpgradePrice: 500
+	})
 
 	function click() {
-		score += clickPower;
-		if (score >= 25 && !featuresUnlocked.includes(0)) {
-			featuresUnlocked = [...featuresUnlocked, 0];
+		game.score += game.clickPower;
+		if (game.score >= 25 && !game.featuresUnlocked.includes(0)) {
+			game.featuresUnlocked = [...game.featuresUnlocked, 0];
 		}
-		if (score >= 300 && !featuresUnlocked.includes[1]) {
-			featuresUnlocked = [...featuresUnlocked, 1];
+		if (game.score >= 300 && !game.featuresUnlocked.includes[1]) {
+			game.featuresUnlocked = [...game.featuresUnlocked, 1];
 		}
 	}
 
 	function upgrade() {
-		if (score >= upgradePrice) {
-			score -= upgradePrice;
-			clickPower += 1;
-			upgradePrice *= 2;
+		if (game.score >= game.upgradePrice) {
+			game.score -= game.upgradePrice;
+			game.clickPower += 1;
+			game.upgradePrice *= 2;
 		}
 	}
 
 	function upgradeAuto() {
-		if (score >= autoUpgradePrice) {
-			score -= autoUpgradePrice;
-			autoclickPower += 1;
-			autoUpgradePrice *= 3;
+		if (game.score >= game.autoUpgradePrice) {
+			game.score -= game.autoUpgradePrice;
+			game.autoclickPower += 1;
+			game.autoUpgradePrice *= 3;
 		}
 	}
 
 	function autoclick() {
-		score += autoclickPower;
+		game.score += game.autoclickPower;
 	}
 
 	setInterval(autoclick, 1000);
 </script>
 
-<h1>{score == 0 ? 'Click' : score}</h1>
+<h1>{game.score == 0 ? 'Click' : game.score}</h1>
 
 <div class="buttons">
 	<button class="button" onclick={click}>click();</button>
-	{#if featuresUnlocked.includes(0)}
+	{#if game.featuresUnlocked.includes(0)}
 		<button class="button" onclick={upgrade}>upgrade();</button>
 	{/if}
-	{#if featuresUnlocked.includes(1)}
+	{#if game.featuresUnlocked.includes(1)}
 		<button class="button" onclick={upgradeAuto}>upgradeAuto();</button>
 	{/if}
 </div>
-<div class="code-block">
-	<div class="code-header">
-		<span class="file-name">game.js</span>
-	</div>
-	<code>{code}</code>
-</div>
+<Codedisplay {game}></Codedisplay>
 
 <style>
 	.buttons {
@@ -128,40 +62,6 @@ function click() {
 		gap: 1rem;
 		align-items: flex-start;
 		margin: 1em 0;
-	}
-
-	.code-block {
-		background-color: var(--color-fg-1);
-		border-radius: 8px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		overflow: hidden;
-		margin: 0;
-		padding: 0;
-		color: var(--color-bg);
-		font-family: monospace;
-		font-size: 1rem;
-		line-height: 1.5;
-		overflow-x: auto;
-	}
-
-	.code-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0.5rem 1rem;
-		background-color: rgba(0, 0, 0, 0.1);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-
-	.file-name {
-		font-size: 0.9rem;
-		opacity: 0.8;
-	}
-
-	code {
-		display: block;
-		padding: 1.5rem;
-		white-space: pre;
 	}
 
 	.button {
