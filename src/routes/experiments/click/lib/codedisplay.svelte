@@ -3,59 +3,24 @@
 
 	let code = $derived.by(() => {
 		// Header
-		let codeString = `// click v0.1
-// by Mae Moon
-// TODO: add saving\n\n`;
+		let codeString = `// click v0.1\n// by Mae Moon\n// TODO: add saving\n\n`;
 		// Click
 		if (game.featuresUnlocked.includes(1)) {
-			codeString += `function click() {
-	score += ${game.clickPower};
-	// TODO: add new stuff
-}`
+			codeString += `function click() {\n    score += ${game.clickPower};\n    // TODO: add new stuff\n}`;
 		} else if (game.featuresUnlocked.includes(0)) {
-			codeString += `function click() {
-	score += ${game.clickPower};
-	if (score >= 300) {
-        unlockNewFeature();
-    }
-}`
+			codeString += `function click() {\n    score += ${game.clickPower};\n    if (score >= 300) {\n        unlockNewFeature();\n    }\n}`;
 		} else {
-			codeString += `function click() {
-	score += ${game.clickPower};
-	if (score >= 25) {
-        unlockNewFeature();
-    }
-}`
+			codeString += `function click() {\n    score += ${game.clickPower};\n    if (score >= 25) {\n        unlockNewFeature();\n    }\n}`;
 		}
 
 		// Click Upgrade
 		if (game.featuresUnlocked.includes(0)) {
-			codeString += `
-function upgrade() {
-    if (score >= ${game.upgradePrice}) {
-        score -= ${game.upgradePrice};
-        clickPower += 1;
-        upgradePrice *= 2;
-    }
-}`
+			codeString += `\n\nfunction upgrade() {\n    if (score >= ${game.upgradePrice}) {\n        score -= ${game.upgradePrice};\n        clickPower += 1;\n        upgradePrice *= 2;\n    }\n}`;
 		}
 
 		// Autoclicker
 		if (game.featuresUnlocked.includes(1)) {
-			codeString += `
-function upgradeAuto() {
-    if (score >= ${game.autoUpgradePrice}) {
-        score -= ${game.autoUpgradePrice};
-        autoclickPower += 1;
-        autoUpgradePrice *= 3;
-    }
-}
-    
-function autoclick() {
-    score += ${game.autoclickPower};
-}
-
-setInterval(autoclick, 1000);`
+			codeString += `\n\nfunction upgradeAuto() {\n    if (score >= ${game.autoUpgradePrice}) {\n        score -= ${game.autoUpgradePrice};\n        autoclickPower += 1;\n        autoUpgradePrice *= 3;\n    }\n}\n\nfunction autoclick() {\n    score += ${game.autoclickPower};\n}\n\nsetInterval(autoclick, 1000);`;
 		}
 		return codeString;
 	});

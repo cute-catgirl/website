@@ -1,5 +1,5 @@
 <script>
-	import Codedisplay from "./lib/codedisplay.svelte";
+	import CodeDisplay from "./lib/codeDisplay.svelte";
 
 	let game = $state({
 		score: 0,
@@ -54,7 +54,7 @@
 		<button class="button" onclick={upgradeAuto}>upgradeAuto();</button>
 	{/if}
 </div>
-<Codedisplay {game}></Codedisplay>
+<CodeDisplay {game}></CodeDisplay>
 
 <style>
 	.buttons {
