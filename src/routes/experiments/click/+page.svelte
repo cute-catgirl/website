@@ -1,5 +1,5 @@
 <script>
-	import CodeDisplay from "/lib/codeDisplay.svelte";
+	import CodeDisplay from "./codeDisplay.svelte";
 
 	let game = $state({
 		score: 0,
