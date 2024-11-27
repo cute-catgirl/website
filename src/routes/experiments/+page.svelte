@@ -13,4 +13,7 @@
 	<li>
         <a href="/experiments/logstats">logiverse stats</a>
     </li>
+    <li>
+        <a href="https://cute-catgirl.github.io/clicker-v2/">click 2</a>
+    </li>
 </ul>
