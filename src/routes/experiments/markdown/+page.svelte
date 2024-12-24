@@ -40,7 +40,6 @@
 		const handleExpression = (expression) => {
 			const [variable, value] = expression.split('=');
 			documentVariables[variable] = value;
-			console.log(documentVariables);
 		};
 
 		for (let line of lines) {
