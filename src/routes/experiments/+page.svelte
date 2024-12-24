@@ -19,4 +19,7 @@
     <li>
         <a href="/experiments/markdown">markdown</a>
     </li>
+    <li>
+        <a href="http://pronouns.maemoon.me">pronouns</a>
+    </li>
 </ul>
