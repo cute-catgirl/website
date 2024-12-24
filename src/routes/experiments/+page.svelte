@@ -16,4 +16,7 @@
     <li>
         <a href="https://cute-catgirl.github.io/clicker-v2/">click 2</a>
     </li>
+    <li>
+        <a href="/experiments/markdown">markdown</a>
+    </li>
 </ul>
