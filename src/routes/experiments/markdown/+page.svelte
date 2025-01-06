@@ -1,14 +1,8 @@
 <script>
-	// #, ##, ###, ####, #####, ######
 	const headingRegex = /^(#{1,6})\s(.*)$/;
-	// $variable=value
 	const expressionRegex = /^\$(.*)$/;
-	// *italic* or _italic_
 	const italicRegex = /(\*|_)(.*?)\1/g;
-	// **bold** or __bold__
 	const boldRegex = /(\*\*|__)(.*?)\1/g;
-	// <input ${variable} />
-	const inputRegex = /<input\s\$\{(.+?)\}\s\/>/g;
 	let rawContent = $state(
 		'# Heading\n## Heading 2\n### Heading 3\nSome body text!\n\n**Bold text**\n*Italic text*\n\n$variable=*nyaa~*\nvar: {variable}\n\n$variable2=**:3**\nvar 2: {variable2}\n\n$variable3={variable} {variable2}\nvar 3: {variable3}'
 	);
@@ -16,7 +10,7 @@
 	let content = $derived.by(() => {
 		let lines = rawContent.split('\n');
 		let parsedLines = [];
-		let initialDocumentVariables = {};
+		let documentVariables = {};
 
 		const applyInlineStyles = (text, visited = new Set()) => {
 			let textToReturn = text;
@@ -45,7 +39,7 @@
 
 		const handleExpression = (expression) => {
 			const [variable, value] = expression.split('=');
-			initialDocumentVariables[variable] = value;
+			documentVariables[variable] = value;
 		};
 
 		for (let line of lines) {
