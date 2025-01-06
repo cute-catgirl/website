@@ -1,7 +1,6 @@
 <script>
 	import Breadcrumb from '../lib/breadcrumb.svelte';
-	import '$lib/global.css';
-	import { blur } from 'svelte/transition';
+	import "../app.css";
 	import { theme } from './shared.svelte.js';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
@@ -12,7 +11,7 @@
 	inject({ mode: dev ? 'development' : 'production' });
 	injectSpeedInsights();
 	onMount(() => {
-		document.body.className = theme.dark ? 'theme-dark' : 'theme-light';
+		document.documentElement.className = theme.dark ? 'dark' : '';
 	});
 </script>
 
@@ -24,74 +23,26 @@
 	{/if}
 </svelte:head>
 
-<div id="page">
+<div id="page" class="bg-slate-100 w-screen min-h-screen flex justify-center items-start bg-nord6 dark:bg-nord1">
 	{#key data.currentRoute}
-		<main>
+		<main class="w-1/2 h-full p-4 text-nord0 dark:text-nord6 leading-snug">
 			<Breadcrumb path={data.currentRoute}></Breadcrumb>
 			{@render children?.()}
 		</main>
 		<button
+			class="fixed bottom-4 right-4 text-3xl flex justify-center items-center w-12 h-12 hover:-translate-y-1 transition-transform focus:outline outline-2 outline-nord2 dark:outline-nord4 rounded inline-block"
 			aria-label="Switch theme"
 			id="themebutton"
 			onclick={() => {
 				theme.dark = !theme.dark;
-				document.body.className = theme.dark ? 'theme-dark' : 'theme-light';
+				document.body.className = theme.dark ? 'dark' : '';
 			}}
 		>
 			{#if theme.dark}
-				<i class="fa-solid fa-moon"></i>
+				<i class="fa-solid fa-moon text-nord6"></i>
 			{:else}
-				<i class="fa-solid fa-sun"></i>
+				<i class="fa-solid fa-sun text-nord0"></i>
 			{/if}
 		</button>
 	{/key}
 </div>
-
-<style>
-	#page {
-		display: flex;
-		justify-content: center;
-		flex-shrink: 1;
-	}
-
-	/*aside {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		padding: 2em;
-		flex-basis: 15%;
-	}*/
-
-	main {
-		padding: 2em;
-		flex-basis: 50%;
-	}
-
-	/*.active::before {
-		content: '* ';
-	}*/
-
-	#themebutton {
-		position: fixed;
-		right: 1em;
-		bottom: 1em;
-		border: none;
-		font-size: 2em;
-		cursor: pointer;
-		color: var(--color-fg-1);
-		background-color: transparent;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 1.5em;
-		height: 1.5em;
-		padding: 0;
-		transition: 0.1s ease-in-out;
-	}
-
-	#themebutton:hover {
-		color: var(--color-fg-2);
-		transform: translate(0, -3px);
-	}
-</style>

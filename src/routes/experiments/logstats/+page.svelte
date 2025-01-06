@@ -22,7 +22,7 @@
     }
 </script>
 
-<h1>Logiverse stats</h1>
+<h1 class="text-xl font-bold">Logiverse stats</h1>
 <br>
 <h2>
     The <a href="https://logiverse.social">Logiverse</a> currently has {calculateTotal(data.counts)} users.

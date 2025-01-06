@@ -31,41 +31,15 @@
     }
 </script>
 
-<div>
+<div class="flex gap-1 items-center text-md select-none">
     {#each splitPath as segment, index}
         {#if index > 0}
             <span>/</span>
         {/if}
         {#if getHref(segment, index) !== null}
-            <a href={getHref(segment, index)}>{segment}</a>
+            <a href={getHref(segment, index)} class="hover:underline focus:outline outline-2 outline-nord2 outline-offset-1 dark:outline-nord4 rounded inline-block">{segment}</a>
         {:else}
             <span class="non-link">{segment}</span>
         {/if}
     {/each}
 </div>
-
-<style>
-    div {
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-        font-size: 1.2em;
-    }
-
-    span {
-        font-size: 1.2em;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .non-link {
-        color: var(--color-fg-4);  /* Optional: style non-linkable segments differently */
-    }
-</style>

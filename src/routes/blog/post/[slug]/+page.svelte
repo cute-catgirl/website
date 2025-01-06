@@ -3,20 +3,10 @@
 	let dateString = data.date.replaceAll('-', '/');
 </script>
 
-<article>
-	<h1>{data.title}</h1>
-	<h2>{dateString}</h2>
-	<br />
+<h1 class="text-xl font-bold">{data.title}</h1>
+<h2>{dateString}</h2>
+<br />
+<article class="prose prose-h1:text-xl prose-a:underline">
 	<data.content />
 </article>
-<a href="..">Back</a>
-
-<style>
-	article {
-		padding-bottom: 1em;
-	}
-
-	h2 {
-		font-size: 1.2em;
-	}
-</style>
+<a href=".." class="underline">Back</a>

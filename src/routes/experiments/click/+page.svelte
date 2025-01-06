@@ -43,7 +43,7 @@
 	setInterval(autoclick, 1000);
 </script>
 
-<h1>{game.score == 0 ? 'Click' : game.score}</h1>
+<h1 class="text-xl font-bold">{game.score == 0 ? 'Click' : game.score}</h1>
 
 <div class="buttons">
 	<button class="button" onclick={click}>click();</button>

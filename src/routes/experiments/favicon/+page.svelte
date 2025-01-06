@@ -127,7 +127,7 @@
 	<link rel="icon" href={favicon} bind:this={link} />
 </svelte:head>
 
-<h1>Favicon</h1>
+<h1 class="text-xl font-bold">Favicon</h1>
 <br />
 <div id="canvasContainer">
 	<canvas
