@@ -32,10 +32,11 @@
 	{/each}
 	<a href="/blog" class="underline font-bold focus:outline outline-2 outline-nord2 outline-offset-1 dark:outline-nord4 rounded">see more -></a>
 </ul>
-<h2 class="text-xl font-bold">Contact</h2>
+<h2 class="text-xl font-bold">Contact + Socials</h2>
 <div class="pb-3 leading-normal">
 	<p>Discord ~ cute_catgirl</p>
 	<p>Email ~ maemoon@proton.me</p>
+	<a href="https://bsky.app/profile/maemoon.me">Bluesky - @maemoon.me</a>
 </div>
 <h2 class="text-xl font-bold pb-2">Support Me</h2>
 <Supportbutton darkMode={theme.dark}></Supportbutton>
