@@ -22,4 +22,7 @@
     <li>
         <a href="http://pronouns.maemoon.me" class="focus:outline outline-2 outline-nord2 outline-offset-1 dark:outline-nord4 rounded inline-block underline">pronouns</a>
     </li>
+    <li>
+        <a href="/experiments/music" class="focus:outline outline-2 outline-nord2 outline-offset-1 dark:outline-nord4 rounded inline-block underline">music</a>
+    </li>
 </ul>
