@@ -25,4 +25,7 @@
     <li>
         <a href="/experiments/music" class="focus:outline outline-2 outline-nord2 outline-offset-1 dark:outline-nord4 rounded inline-block underline">music</a>
     </li>
+    <li>
+        <a href="https://cute-catgirl.github.io/sketch" class="focus:outline outline-2 outline-nord2 outline-offset-1 dark:outline-nord4 rounded inline-block underline">sketch</a>
+    </li>
 </ul>
